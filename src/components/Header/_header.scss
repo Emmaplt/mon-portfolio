@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1F9FB;
+    height: 168px;
+    color: #024F55;
+    padding: 20px 400px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    color: #024F55;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 700;
+    gap: 50px;
+}
+
+.nav-list li {
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-list li:hover {
+    color: #3C949E;
+    border-bottom: 3px solid #3C949E;
+}
+
+
+.App-logo-header {
+    max-width: 120px;
+    transition: transform 1s ease;
+}
+
+.App-logo-header:hover {
+    transform: rotate(360deg);
+}

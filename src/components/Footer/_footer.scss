@@ -1,0 +1,29 @@
+.footer-content {
+    height: 150px;
+    background-color: #D5F2F8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    color: #024f55;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.App-logo-footer {
+    max-width: 100px;
+    transition: transform 1s ease;
+}
+
+.App-logo-footer:hover {
+    transform: rotate(360deg);
+}
+
+.footer-socials {
+
+}
