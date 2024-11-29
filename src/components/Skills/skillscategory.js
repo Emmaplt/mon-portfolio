@@ -1,21 +1,17 @@
-import React from "react"; // Import React
-import "./_skillscategory.scss"; // Import des styles spécifiques à SkillCategory
+import React from "react";
+import "./_skillscategory.scss";
 
 const SkillCategory = ({ title, icons }) => {
+  const totalIcons = icons.length; // Nombre d'icônes pour ce cercle
+
   return (
     <div className="skill-category">
-      {/* Titre de la catégorie */}
       <div className="skill-title">{title}</div>
-
-      {/* Cercle contenant les icônes */}
-      <div className="skill-circle">
+      <div className={`skill-circle total-${totalIcons}`}>
         {icons.map((icon, index) => (
-          <img
-            key={index} // Clé unique pour chaque icône
-            src={icon.src} // Chemin de l'image
-            alt={icon.alt} // Texte alternatif
-            className={`skill-icon skill-icon-${index + 1}`} // Classes dynamiques
-          />
+          <div key={index} className="skill-icon">
+            <img src={icon.src} alt={icon.alt} />
+          </div>
         ))}
       </div>
     </div>

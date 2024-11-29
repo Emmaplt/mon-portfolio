@@ -1,56 +1,88 @@
 .skill-category {
-    text-align: center;
-  
-    .skill-title {
-      background-color: #024f55;
-      color: white;
-      font-weight: bold;
-      padding: 10px 20px;
-      border-radius: 20px;
-      margin-bottom: 10px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+
+  .skill-title {
+    background-color: #024f55;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .skill-circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #024f55;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    animation: spin 10s linear infinite;
+
+    .skill-icon {
+      position: absolute;
+
+      img {
+        animation: stay-upright 10s linear infinite;
+        display: block;
+
+      }
     }
-  
-    .skill-circle {
-      position: relative;
-      width: 150px;
-      height: 150px;
-      border: 2px solid #024f55;
-      border-radius: 50%;
-      margin: 0 auto;
-  
-      .skill-icon {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        animation: rotate 10s linear infinite; /* Animation continue */
+
+    &.total-2 {
+      $total-icons: 2;
+      @for $i from 1 through $total-icons {
+        .skill-icon:nth-child(#{$i}) {
+          $angle: ($i - 1) * (360deg / $total-icons);
+          top: calc(50% + 75px * cos($angle));
+          left: calc(50% + 75px * sin($angle));
+          transform: translate(-50%, -50%);
+        }
       }
-  
-      /* Positionnement des icônes */
-      .skill-icon-1 {
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+    }
+
+    &.total-4 {
+      $total-icons: 4;
+      @for $i from 1 through $total-icons {
+        .skill-icon:nth-child(#{$i}) {
+          $angle: ($i - 1) * (360deg / $total-icons);
+          top: calc(50% + 75px * cos($angle));
+          left: calc(50% + 75px * sin($angle));
+          transform: translate(-50%, -50%);
+        }
       }
-  
-      .skill-icon-2 {
-        bottom: 10%;
-        left: 20%;
-      }
-  
-      .skill-icon-3 {
-        bottom: 10%;
-        right: 20%;
+    }
+
+    &.total-5 {
+      $total-icons: 5;
+      @for $i from 1 through $total-icons {
+        .skill-icon:nth-child(#{$i}) {
+          $angle: ($i - 1) * (360deg / $total-icons);
+          top: calc(50% + 75px * cos($angle));
+          left: calc(50% + 75px * sin($angle));
+          transform: translate(-50%, -50%);
+        }
       }
     }
   }
-  
-  /* Animation de rotation */
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg) translateX(-50%);
-    }
-    to {
-      transform: rotate(360deg) translateX(-50%);
-    }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes stay-upright {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

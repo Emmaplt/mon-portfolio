@@ -1,31 +1,44 @@
-import React from "react"; // Import React
-import SkillCategory from "./skillscategory"; // Import du composant SkillCategory
-import "./_skills.scss"; // Import des styles spécifiques à Skills
+import React from "react";
+import SkillCategory from "./skillscategory";
+import "./_skills.scss";
+
+import mongodbIcon from "../../assets/icons/mongodb.png";
+import nodejsIcon from "../../assets/icons/nodejs.png";
+import javascriptIcon from "../../assets/icons/javascript.png";
+import cssIcon from "../../assets/icons/css.png";
+import reactIcon from "../../assets/icons/react.png";
+import githubIcon from "../../assets/icons/github.png";
+import figmaIcon from "../../assets/icons/figma.png";
+import vscodeIcon from "../../assets/icons/vscode.png";
+import htmlIcon from "../../assets/icons/html.png";
+import sassIcon from "../../assets/icons/sass.png";
+import notionIcon from "../../assets/icons/notion.png";
 
 const Skills = () => {
-  // Données pour chaque catégorie
   const backendIcons = [
-    { src: "/path/to/mongodb.svg", alt: "MongoDB" },
-    { src: "/path/to/nodejs.svg", alt: "Node.js" },
+    { src: mongodbIcon, alt: "MongoDB" },
+    { src: nodejsIcon, alt: "Node.js" },
   ];
 
   const frontendIcons = [
-    { src: "/path/to/javascript.svg", alt: "JavaScript" },
-    { src: "/path/to/css3.svg", alt: "CSS3" },
-    { src: "/path/to/react.svg", alt: "React" },
+    { src: javascriptIcon, alt: "JavaScript" },
+    { src: cssIcon, alt: "CSS3" },
+    { src: reactIcon, alt: "React" },
+    { src: htmlIcon, alt: "HTML" },
+    { src: sassIcon, alt: "SASS" },
   ];
 
   const softwareIcons = [
-    { src: "/path/to/github.svg", alt: "GitHub" },
-    { src: "/path/to/figma.svg", alt: "Figma" },
-    { src: "/path/to/vscode.svg", alt: "VS Code" },
+    { src: githubIcon, alt: "GitHub" },
+    { src: figmaIcon, alt: "Figma" },
+    { src: vscodeIcon, alt: "VS Code" },
+    { src: notionIcon, alt: "Notion" },
   ];
 
   return (
     <div className="skills">
       <h2>Compétences</h2>
       <div className="skills-categories">
-        {/* Passe les données à SkillCategory */}
         <SkillCategory title="Back-end" icons={backendIcons} />
         <SkillCategory title="Front-end" icons={frontendIcons} />
         <SkillCategory title="Logiciels" icons={softwareIcons} />
