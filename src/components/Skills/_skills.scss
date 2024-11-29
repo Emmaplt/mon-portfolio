@@ -1,0 +1,17 @@
+.skills {
+    text-align: center;
+  
+    h2 {
+      font-size: 24px;
+      color: #024f55;
+      margin-bottom: 20px;
+      text-decoration: underline;
+    }
+  
+    .skills-categories {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; /* Les catégories s'ajustent sur mobile */
+    }
+  }

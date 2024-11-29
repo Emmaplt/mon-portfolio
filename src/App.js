@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/Header/Header';
+import Header from './components/Header/header';
 import Hero from './components/Hero/hero' ;
 import Footer from './components/Footer/footer';
 
