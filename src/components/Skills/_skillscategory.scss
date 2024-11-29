@@ -1,21 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
 .skill-category {
   text-align: center;
 
   .skill-title {
     background-color: #024f55;
-    color: white;
-    font-weight: bold;
+    color: #F1F9FB;
+    font-family: Rozha One;
+    font-weight: 400;
+    font-size: 30px;
     padding: 10px 20px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .skill-circle {
     position: relative;
-    width: 150px;
-    height: 150px;
-    border: 2px solid #024f55;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #9bd8db;
     border-radius: 50%;
     margin: 0 auto;
 
@@ -36,8 +40,8 @@
       @for $i from 1 through $total-icons {
         .skill-icon:nth-child(#{$i}) {
           $angle: ($i - 1) * (360deg / $total-icons);
-          top: calc(50% + 75px * cos($angle));
-          left: calc(50% + 75px * sin($angle));
+          top: calc(50% + 125px * cos($angle));
+          left: calc(50% + 125px * sin($angle));
           transform: translate(-50%, -50%);
         }
       }
@@ -48,8 +52,8 @@
       @for $i from 1 through $total-icons {
         .skill-icon:nth-child(#{$i}) {
           $angle: ($i - 1) * (360deg / $total-icons);
-          top: calc(50% + 75px * cos($angle));
-          left: calc(50% + 75px * sin($angle));
+          top: calc(50% + 125px * cos($angle));
+          left: calc(50% + 125px * sin($angle));
           transform: translate(-50%, -50%);
         }
       }
@@ -60,8 +64,8 @@
       @for $i from 1 through $total-icons {
         .skill-icon:nth-child(#{$i}) {
           $angle: ($i - 1) * (360deg / $total-icons);
-          top: calc(50% + 75px * cos($angle));
-          left: calc(50% + 75px * sin($angle));
+          top: calc(50% + 125px * cos($angle));
+          left: calc(50% + 125px * sin($angle));
           transform: translate(-50%, -50%);
         }
       }

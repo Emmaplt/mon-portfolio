@@ -1,17 +1,25 @@
 .skills {
-    text-align: center;
-  
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 500px;
+  background-color: #d5f2f8;
+
     h2 {
-      font-size: 24px;
+      font-family: Roboto;
+      font-size: 30px;
       color: #024f55;
-      margin-bottom: 20px;
       text-decoration: underline;
+      text-underline-offset: 10px;
+      height: 30px;
     }
   
     .skills-categories {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 300px;
       align-items: center;
-      flex-wrap: wrap; /* Les catégories s'ajustent sur mobile */
+      flex-wrap: wrap;
+      margin-top: 100px;
     }
   }
