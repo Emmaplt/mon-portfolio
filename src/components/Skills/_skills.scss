@@ -1,9 +1,10 @@
 .skills {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-content: center;
   height: 500px;
   background-color: #d5f2f8;
+  padding-bottom: 100px;
 
     h2 {
       font-family: Roboto;
@@ -12,14 +13,15 @@
       text-decoration: underline;
       text-underline-offset: 10px;
       height: 30px;
+      margin-bottom: 100px;
+      margin-left: 220px;
     }
   
     .skills-categories {
       display: flex;
       justify-content: center;
-      gap: 300px;
+      gap: 200px;
       align-items: center;
       flex-wrap: wrap;
-      margin-top: 100px;
     }
   }

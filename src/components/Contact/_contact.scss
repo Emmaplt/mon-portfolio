@@ -1,0 +1,108 @@
+.contact-section {
+  background-color: #f1f9fb;
+  font-family: Roboto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  h2 {
+    font-size: 30px;
+    color: #024f55;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-left: 220px;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+  }
+
+  .contact-info {
+    text-align: center;
+    max-width: 300px;
+
+    .mailbox-image {
+      width: 20vw;
+    }
+
+    p {
+      color: #024f55;
+      font-size: 25px;
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .form-line {
+      display: flex;
+      flex-direction: column;
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+        font-family: roboto;
+        border: none;
+        background-color: #9bd8db;
+        outline: none;
+        color: #3c949e;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: #3c949e;
+        opacity: 1;
+      }
+
+      input[name="name"] {
+        border-radius: 50px;
+        width: 300px;
+      }
+
+      input[name="surname"] {
+        border-radius: 50px;
+        width: 300px;
+      }
+
+      input[name="email"] {
+        border-radius: 50px;
+        width: 400px;
+      }
+
+      input[name="subject"] {
+        border-radius: 50px;
+        width: 400px;
+      }
+
+      textarea {
+        border-radius: 15px;
+        width: 500px;
+      }
+    }
+
+    button {
+    align-self: flex-end;
+      width: 150px;
+      padding: 10px 20px;
+      font-family: roboto;
+      font-size: 1.2rem;
+      color: #3c949e;
+      background-color: #9bd8db;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #024f55;
+      }
+    }
+  }
+}

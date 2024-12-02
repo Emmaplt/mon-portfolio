@@ -1,0 +1,42 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #d5f2f8;
+  }
+  
+  .services-title {
+    font-family: Roboto;
+    font-size: 30px;
+    color: #024f55;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-left: 220px;
+    margin-bottom: 50px;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .service-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  h3 {
+    font-family: Roboto;
+    font-size: 25px;
+    color: #024f55;
+  }
