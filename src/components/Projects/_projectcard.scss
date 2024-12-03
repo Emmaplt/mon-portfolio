@@ -18,8 +18,8 @@
     .projects__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px; /* Espace entre les cartes */
-        justify-items: center; /* Centre les cartes horizontalement */
+        gap: 30px;
+        justify-items: center;
       }
     
       .project-card {

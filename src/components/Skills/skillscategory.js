@@ -2,7 +2,7 @@ import React from "react";
 import "./_skillscategory.scss";
 
 const SkillCategory = ({ title, icons }) => {
-  const totalIcons = icons.length; // Nombre d'icônes pour ce cercle
+  const totalIcons = icons.length;
 
   return (
     <div className="skill-category">

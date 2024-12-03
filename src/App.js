@@ -6,7 +6,7 @@ import Services from "./components/Services/services";
 import Skills from "./components/Skills/skills";
 import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
-import ProjectsGrid from "./components/Projects/projectcard"; // Renommé pour clarté
+import ProjectsCard from "./components/Projects/projectcard";
 import ProjectDetail from "./components/ProjectDetail/projectdetail";
 
 function App() {
@@ -21,11 +21,11 @@ function App() {
               <>
                 <Header />
                 <Hero />
-                <ProjectsGrid />
+                <ProjectsCard />
                 <Services />
                 <Skills />
                 <Contact />
-                <Footer /> {/* Footer uniquement sur l'accueil */}
+                <Footer />
               </>
             }
           />
