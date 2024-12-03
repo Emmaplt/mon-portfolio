@@ -1,5 +1,5 @@
 import React from "react";
-import "./_skillscategory.scss";
+import "./skillscategory.scss";
 
 const SkillCategory = ({ title, icons }) => {
   const totalIcons = icons.length;

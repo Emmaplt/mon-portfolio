@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './_projectcard.scss';
+import './projectcard.scss';
 import projects from '../../data/projectsData';
 
 const Projects = () => {

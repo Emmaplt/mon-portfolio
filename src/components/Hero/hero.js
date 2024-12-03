@@ -1,5 +1,5 @@
 import React from 'react';
-import './_hero.scss';
+import './hero.scss';
 import avatar from "../../assets/images/avatar.png";
 
 

@@ -1,6 +1,6 @@
 import React from "react";
-import ContactForm from "./contactForm";
-import "./_contact.scss";
+import ContactForm from "./ContactForm";
+import "./contact.scss";
 import mailboxImage from "../../assets/images/mailbox.png";
 
 const Contact = () => {

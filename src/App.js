@@ -1,13 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header/header";
-import Hero from "./components/Hero/hero";
-import Services from "./components/Services/services";
-import Skills from "./components/Skills/skills";
-import Contact from "./components/Contact/contact";
-import Footer from "./components/Footer/footer";
-import ProjectsCard from "./components/Projects/projectcard";
-import ProjectDetail from "./components/ProjectDetail/projectdetail";
+
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Services from "./components/Services/Services";
+import Skills from "./components/Skills/Skills";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import ProjectsCard from "./components/Projects/Projectcard";
+import ProjectDetail from "./components/ProjectDetail/Projectdetail";
 
 function App() {
   return (

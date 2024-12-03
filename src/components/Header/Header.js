@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import './_header.scss';
+import './header.scss';
 import logo from "../../assets/images/logo-ymeria.png";
 
 const Header = () => {

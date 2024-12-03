@@ -1,5 +1,5 @@
 import React from "react";
-import "./_services.scss";
+import "./services.scss";
 import Applications from "../../assets/images/card-applications.png";
 import Utilisateur from "../../assets/images/card-utilisateur-design.png";
 import Accessibilite from "../../assets/images/card-accessibilite.png";

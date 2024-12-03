@@ -1,6 +1,6 @@
 import React from "react";
-import SkillCategory from "./skillscategory";
-import "./_skills.scss";
+import SkillCategory from "./Skillscategory";
+import "./skills.scss";
 
 import mongodbIcon from "../../assets/icons/mongodb.png";
 import nodejsIcon from "../../assets/icons/nodejs.png";
