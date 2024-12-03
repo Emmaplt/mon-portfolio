@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './_projectcard.scss';
-import { projects } from '../../data/projectsData';
+import projects from '../../data/projectsData';
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ const Projects = () => {
             className="project-card"
             onClick={() => handleCardClick(project.id)}
           >
-            <img src={project.image} alt={project.title} className="project-card__image" />
+            <img src={project.cover} alt={project.titleproject} className="project-card__image" />
             <h3>{project.title}</h3>
           </div>
         ))}
