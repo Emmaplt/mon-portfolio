@@ -10,9 +10,7 @@ const Contact = () => {
       <div className="contact-container">
         <div className="contact-info">
           <img src={mailboxImage} alt="Boîte aux lettres" className="mailbox-image" />
-          <p>
-            Pour toutes questions ou précisions, n’hésitez pas à me contacter.
-          </p>
+          <p>Pour toutes questions ou précisions, n’hésitez pas à me contacter.</p>
         </div>
         <ContactForm />
       </div>

@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.global-container {
+  padding: 0; /* Ajoute une marge intérieure à gauche et à droite */
+  margin: 0 auto; /* Centre le contenu horizontalement */
+}
+

@@ -1,15 +1,14 @@
 .contact-section {
   background-color: #f1f9fb;
-  font-family: Roboto;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  font-family: Roboto, sans-serif;
+  padding: 3rem 0; /* 50px -> 3rem */
 
   h2 {
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px -> 1.875rem */
     color: #024f55;
     text-decoration: underline;
-    text-underline-offset: 10px;
-    margin-left: 220px;
+    text-underline-offset: 0.625rem; /* 10px -> 0.625rem */
+    margin-left: 13.75rem; /* 220px -> 13.75rem */
   }
 
   .contact-container {
@@ -17,27 +16,27 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 300px;
+    gap: 18.75rem; /* 300px -> 18.75rem */
   }
 
   .contact-info {
     text-align: center;
-    max-width: 300px;
+    max-width: 18.75rem; /* 300px -> 18.75rem */
 
     .mailbox-image {
-      width: 20vw;
+      width: 20vw; /* Utilisation de % de la largeur de l'écran */
     }
 
     p {
       color: #024f55;
-      font-size: 25px;
+      font-size: 1.5625rem; /* 25px -> 1.5625rem */
     }
   }
 
   .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem; /* 20px -> 1.25rem */
 
     .form-line {
       display: flex;
@@ -46,57 +45,47 @@
       input,
       textarea {
         width: 100%;
-        padding: 15px;
-        font-size: 1rem;
-        font-family: roboto;
+        padding: 0.9375rem; /* 15px -> 0.9375rem */
+        font-size: 1rem; /* Conserve 1rem pour la lisibilité */
+        font-family: Roboto, sans-serif;
         border: none;
         background-color: #9bd8db;
         outline: none;
         color: #3c949e;
+
+        &::placeholder {
+          color: #3c949e;
+          opacity: 1;
+        }
       }
 
-      input::placeholder,
-      textarea::placeholder {
-        color: #3c949e;
-        opacity: 1;
-      }
-
-      input[name="name"] {
-        border-radius: 50px;
-        width: 300px;
-      }
-
+      input[name="name"],
       input[name="surname"] {
-        border-radius: 50px;
-        width: 300px;
+        width: 18.75rem; /* 300px -> 18.75rem */
+        border-radius: 3.125rem; /* 50px -> 3.125rem */
       }
 
-      input[name="email"] {
-        border-radius: 50px;
-        width: 400px;
-      }
-
+      input[name="email"],
       input[name="subject"] {
-        border-radius: 50px;
-        width: 400px;
+        width: 25rem; /* 400px -> 25rem */
+        border-radius: 3.125rem; /* 50px -> 3.125rem */
       }
 
       textarea {
-        border-radius: 15px;
-        width: 500px;
+        width: 31.25rem; /* 500px -> 31.25rem */
+        border-radius: 0.9375rem; /* 15px -> 0.9375rem */
       }
     }
 
     button {
-    align-self: flex-end;
-      width: 150px;
-      padding: 10px 20px;
-      font-family: roboto;
+      align-self: flex-end;
+      width: 9.375rem; /* 150px -> 9.375rem */
+      padding: 0.625rem 1.25rem; /* 10px 20px -> 0.625rem 1.25rem */
       font-size: 1.2rem;
       color: #3c949e;
       background-color: #9bd8db;
       border: none;
-      border-radius: 50px;
+      border-radius: 3.125rem; /* 50px -> 3.125rem */
       cursor: pointer;
       transition: background-color 0.3s ease;
 

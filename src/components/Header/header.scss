@@ -1,44 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import '../../assets/styles/_variables.scss';
 
 .header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #F1F9FB;
-    height: 168px;
-    color: #024F55;
+    background-color: $background-color;
     padding: 20px 50px;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    color: #024F55;
-    font-family: Roboto;
-    font-size: 22px;
-    font-weight: 700;
-    gap: 50px;
-}
-
-.nav-list li {
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    transition: border-bottom 0.3s ease;
-    cursor: pointer;
-}
-
-.nav-list li:hover {
-    color: #3C949E;
-    border-bottom: 3px solid #3C949E;
-}
-
-
-.App-logo-header {
-    max-width: 120px;
-    transition: transform 1s ease;
-}
-
-.App-logo-header:hover {
-    transform: rotate(360deg);
-}
+    position: relative;
+  
+    .App-logo-header {
+      max-width: 120px;
+      transition: transform 1s ease;
+  
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  
+    .nav-list {
+      display: flex;
+      list-style: none;
+      gap: 50px;
+      font-family: $font-primary;
+      font-size: 22px;
+      font-weight: 700;
+      color: $titre-color;
+  
+      li {
+        cursor: pointer;
+        transition: border-bottom 0.3s ease, color 0.3s ease;
+        border-bottom: 3px solid transparent;
+  
+        &:hover {
+          color: $texte-color;
+          border-bottom-color: $texte-color;
+        }
+      }
+    }
+  
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+      font-size: 28px;
+      color: $titre-color;
+      background: none;
+      border: none;
+  
+      &:focus {
+        outline: none;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .nav-list {
+        display: none; /* Masque la liste par défaut sur mobile */
+        flex-direction: column;
+        gap: 20px;
+        background-color: $titre-color;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  
+      .nav-list.active {
+        display: flex; /* Affiche la liste si le menu est ouvert */
+      }
+  
+      .menu-icon {
+        display: block; /* Affiche l'icône sur mobile */
+      }
+    }
+  }
+  

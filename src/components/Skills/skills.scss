@@ -1,15 +1,17 @@
+@import '../../assets/styles/_variables.scss';
+
 .skills {
   display: flex;
   flex-direction: column;
   align-content: center;
   height: 500px;
-  background-color: #d5f2f8;
+  background-color: $background-container-color;
   padding-bottom: 100px;
 
     h2 {
-      font-family: Roboto;
+      font-family: $font-primary;
       font-size: 30px;
-      color: #024f55;
+      color: $titre-color;
       text-decoration: underline;
       text-underline-offset: 10px;
       height: 30px;

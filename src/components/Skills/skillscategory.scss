@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import '../../assets/styles/_variables.scss';
 
 .skill-category {
   text-align: center;
 
   .skill-title {
-    background-color: #024f55;
-    color: #F1F9FB;
-    font-family: Rozha One;
+    background-color: $titre-color;
+    color: $background-color;
+    font-family: $font-secondary;
     font-weight: 400;
     font-size: 25px;
     padding: 10px 20px;

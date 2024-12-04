@@ -1,19 +1,21 @@
+@import '../../assets/styles/_variables.scss';
+
 .footer-content {
-  height: 150px;
-  background-color: #d5f2f8;
+  height: 10rem; /* Hauteur en rem */
+  background-color: $background-container-color;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 0 2rem; /* Padding en rem pour un espacement flexible */
 
   .footer-socials {
     display: flex;
-    gap: 20px;
+    gap: 1.5rem; /* Espacement entre les icônes */
   }
 
   .icon-circle {
-    width: 50px;
-    height: 50px;
+    width: 3rem; /* Taille du cercle en rem */
+    height: 3rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -21,8 +23,8 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
 
     svg {
-      color: #f1f9fb;
-      font-size: 35px;
+      font-size: 2rem; /* Taille de l'icône en rem */
+      color: $background-color;
     }
 
     &:hover {
@@ -31,10 +33,10 @@
   }
 
   .icon-linkedin-circle {
-    background-color: #3c949e;
+    background-color: $texte-color;
 
     &:hover {
-      background-color: #0f6e77;
+      background-color: lighten($texte-color, 10%);
       svg {
         color: #fff;
       }
@@ -42,29 +44,29 @@
   }
 
   .icon-github-circle {
-    background-color: #024f55;
+    background-color: $titre-color;
 
     &:hover {
-      background-color: #002225;
+      background-color: lighten($titre-color, 10%);
       svg {
         color: #fff;
       }
     }
   }
-}
 
-.footer-content p {
-  color: #024f55;
-  font-family: Roboto, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-}
+  p {
+    font-size: 1.25rem; /* Taille du texte en rem */
+    font-weight: 700;
+    text-align: center;
+    color: $titre-color;
+  }
 
-.App-logo-footer {
-  max-width: 100px;
-  transition: transform 1s ease;
+  .App-logo-footer {
+    max-width: 6rem; /* Taille maximale du logo */
+    transition: transform 1s ease;
 
-  &:hover {
-    transform: rotate(360deg);
+    &:hover {
+      transform: rotate(360deg);
+    }
   }
 }
