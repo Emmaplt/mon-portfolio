@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './header.scss';
 import logo from "../../assets/images/logo-ymeria.png";
 
@@ -13,9 +15,7 @@ const Header = () => {
   return (
     <header className="header">
       <img src={logo} className="App-logo-header" alt="logo" />
-      <button className="menu-icon" onClick={toggleMenu}>
-        ☰ {/* Icône du menu */}
-      </button>
+      <button className="menu-icon" onClick={toggleMenu}><FontAwesomeIcon icon={faBars} /></button>
       <nav>
         <ul className={`nav-list ${menuOpen ? 'active' : ''}`}>
           <li><Link to="hero" smooth={true} onClick={() => setMenuOpen(false)}>PRESENTATION</Link></li>

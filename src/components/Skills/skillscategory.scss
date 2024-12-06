@@ -1,5 +1,9 @@
 @import '../../assets/styles/_variables.scss';
 
+.skills-grid {
+  display: none; /* Masque la grille en version desktop */
+}
+
 .skill-category {
   text-align: center;
 
@@ -33,7 +37,6 @@
       img {
         animation: stay-upright 10s linear infinite;
         display: block;
-
       }
     }
 
@@ -92,3 +95,39 @@
     transform: rotate(-360deg);
   }
 }
+
+@media (max-width: 768px) {
+  .skill-circle {
+    display: none; /* Cache le cercle */
+  }
+
+  .skills-grid {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5vw;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+
+    .skill-icon {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: row;
+      gap: 2rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+

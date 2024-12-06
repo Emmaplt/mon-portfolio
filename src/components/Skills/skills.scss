@@ -2,28 +2,30 @@
 
 .skills {
   display: flex;
+ align-items: center;
   flex-direction: column;
   align-content: center;
-  height: 500px;
+  height: auto;
   background-color: $background-container-color;
   padding-bottom: 100px;
 
     h2 {
       font-family: $font-primary;
-      font-size: 30px;
+      font-size: 1.9rem;
       color: $titre-color;
       text-decoration: underline;
-      text-underline-offset: 10px;
-      height: 30px;
-      margin-bottom: 100px;
-      margin-left: 220px;
+      text-underline-offset: 0.5rem;
+      margin-bottom: 3rem;
     }
   
     .skills-categories {
       display: flex;
       justify-content: center;
-      gap: 200px;
+      gap: 5rem;
+      width: 70%;
+      height: 70%;
       align-items: center;
       flex-wrap: wrap;
     }
   }
+
