@@ -1,20 +1,20 @@
 @import '../../assets/styles/_variables.scss';
 
 .footer-content {
-  height: 10rem; /* Hauteur en rem */
+  height: 10rem;
   background-color: $background-container-color;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 2rem; /* Padding en rem pour un espacement flexible */
+  padding: 0 2rem;
 
   .footer-socials {
     display: flex;
-    gap: 1.5rem; /* Espacement entre les icônes */
+    gap: 1.5rem;
   }
 
   .icon-circle {
-    width: 3rem; /* Taille du cercle en rem */
+    width: 3rem;
     height: 3rem;
     border-radius: 50%;
     display: flex;
@@ -23,7 +23,7 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
 
     svg {
-      font-size: 2rem; /* Taille de l'icône en rem */
+      font-size: 2rem;
       color: $background-color;
     }
 
@@ -55,14 +55,14 @@
   }
 
   p {
-    font-size: 1rem; /* Taille du texte en rem */
+    font-size: 1rem;
     font-weight: 700;
     text-align: center;
     color: $titre-color;
   }
 
   .App-logo-footer {
-    max-width: 6rem; /* Taille maximale du logo */
+    max-width: 6rem;
     transition: transform 1s ease;
 
     &:hover {

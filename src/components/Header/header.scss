@@ -18,19 +18,17 @@
   }
 
   .menu-icon {
-    display: none; /* Par défaut, caché sur desktop */
+    display: none;
     cursor: pointer;
     font-size: 28px;
     color: $titre-color;
     background: none;
     border: none;
 
-    /* Centrage vertical */
     display: flex;
     align-items: center;
     justify-content: center;
 
-    /* Correction du positionnement */
     position: absolute;
     right: 30px;
     top: 50%;
@@ -42,7 +40,7 @@
   }
 
   .nav-list {
-    display: flex; /* Visible sur desktop */
+    display: flex;
     list-style: none;
     gap: 2rem;
     font-family: $font-primary;
@@ -64,16 +62,16 @@
 
   @media (max-width: 1024px) {
     .menu-icon {
-      display: flex; /* Affiche l'icône menu en mobile/tablette */
+      display: flex;
     }
 
     .nav-list {
-      display: none; /* Cache la liste en mobile/tablette */
+      display: none;
       flex-direction: column;
       gap: 20px;
       background-color: $background-container-color;
       position: absolute;
-      top: 100%; /* Place la liste juste en dessous du header */
+      top: 100%;
       left: 0;
       width: 100%;
       text-align: center;
@@ -82,17 +80,17 @@
     }
 
     .nav-list.active {
-      display: flex; /* Affiche la liste en mobile si active */
+      display: flex;
     }
   }
 
   @media (min-width: 1025px) {
     .menu-icon {
-      display: none; /* Cache l'icône au-delà de 1024px */
+      display: none;
     }
 
     .nav-list {
-      display: flex; /* Affiche la liste de navigation en desktop */
+      display: flex;
     }
   }
 }

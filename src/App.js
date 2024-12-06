@@ -25,7 +25,7 @@ function App() {
                 <ProjectsCard />
                 <Services />
                 <Skills />
-                {/* <Contact /> */}
+                <Contact />
                 <Footer />
               </>
             }

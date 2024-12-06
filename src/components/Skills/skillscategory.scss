@@ -1,7 +1,7 @@
 @import '../../assets/styles/_variables.scss';
 
 .skills-grid {
-  display: none; /* Masque la grille en version desktop */
+  display: none;
 }
 
 .skill-category {
@@ -98,7 +98,7 @@
 
 @media (max-width: 768px) {
   .skill-circle {
-    display: none; /* Cache le cercle */
+    display: none;
   }
 
   .skills-grid {

@@ -1,14 +1,19 @@
+@import '../../assets/styles/_variables.scss';
+
 .contact-section {
-  background-color: #f1f9fb;
-  font-family: Roboto, sans-serif;
-  padding: 3rem 0; /* 50px -> 3rem */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color;
+  font-family: $font-primary;
+  padding: 3rem 0;
 
   h2 {
-    font-size: 1.875rem; /* 30px -> 1.875rem */
-    color: #024f55;
+    font-size: 1.9rem;
+    color: $titre-color;
     text-decoration: underline;
-    text-underline-offset: 0.625rem; /* 10px -> 0.625rem */
-    margin-left: 13.75rem; /* 220px -> 13.75rem */
+    text-underline-offset: 0.625rem;
   }
 
   .contact-container {
@@ -16,44 +21,45 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 18.75rem; /* 300px -> 18.75rem */
+    flex-wrap: wrap;
+    gap: 5rem;
+    width: 100%;
   }
 
   .contact-info {
-    text-align: center;
-    max-width: 18.75rem; /* 300px -> 18.75rem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .mailbox-image {
-      width: 20vw; /* Utilisation de % de la largeur de l'écran */
+      width: 60%;
     }
 
     p {
-      color: #024f55;
-      font-size: 1.5625rem; /* 25px -> 1.5625rem */
+      text-align: center;
+      color: $titre-color;
+      font-size: 1.5rem;
     }
   }
 
   .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem; /* 20px -> 1.25rem */
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 500px;
 
     .form-line {
-      display: flex;
-      flex-direction: column;
-
       input,
       textarea {
-        width: 100%;
-        padding: 0.9375rem; /* 15px -> 0.9375rem */
-        font-size: 1rem; /* Conserve 1rem pour la lisibilité */
-        font-family: Roboto, sans-serif;
+        padding: 0.9rem;
         border: none;
-        background-color: #9bd8db;
+        background-color: $form-color;
         outline: none;
-        color: #3c949e;
 
         &::placeholder {
+          font-size: 1rem;
+          font-family: $font-primary;
           color: #3c949e;
           opacity: 1;
         }
@@ -61,37 +67,111 @@
 
       input[name="name"],
       input[name="surname"] {
-        width: 18.75rem; /* 300px -> 18.75rem */
-        border-radius: 3.125rem; /* 50px -> 3.125rem */
+        width: 100%;
+        border-radius: 3rem;
       }
 
       input[name="email"],
       input[name="subject"] {
-        width: 25rem; /* 400px -> 25rem */
-        border-radius: 3.125rem; /* 50px -> 3.125rem */
+        width: 100%;
+        border-radius: 3rem;
       }
 
       textarea {
-        width: 31.25rem; /* 500px -> 31.25rem */
-        border-radius: 0.9375rem; /* 15px -> 0.9375rem */
+        width: 100%;
+        border-radius: 0.9rem;
       }
     }
 
     button {
-      align-self: flex-end;
-      width: 9.375rem; /* 150px -> 9.375rem */
-      padding: 0.625rem 1.25rem; /* 10px 20px -> 0.625rem 1.25rem */
+      width: 10vw;
+      padding: 0.6rem 1rem;
       font-size: 1.2rem;
-      color: #3c949e;
-      background-color: #9bd8db;
+      color: $texte-color;
+      background-color: $form-color;
       border: none;
-      border-radius: 3.125rem; /* 50px -> 3.125rem */
+      border-radius: 3rem;
       cursor: pointer;
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: #024f55;
+        background-color: $titre-color;
       }
     }
   }
+}
+
+@media (max-width: 1025px) {
+  .contact-section {
+  .contact-container {
+    gap: 2rem;
+  }
+
+  .contact-info {
+    flex-direction: row;
+    width: 80%;
+
+    .mailbox-image {
+      width: 40%;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .contact-form {
+    text-align: center;
+    width: 100%;
+    .form-line {
+      input,
+      textarea {
+        width: 100%;
+        max-width: none;
+      }
+    }
+
+    button {
+      width: 60%;
+    }
+  }
+}
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+  .contact-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-info {
+
+    .mailbox-image {
+      width: 50%;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .contact-form {
+    text-align: center;
+    max-width: 300px;
+
+    .form-line {
+      width: 90%;;
+      input,
+      textarea {
+        width: 100%;
+      }
+    }
+
+    button {
+      width: 70%;
+      font-size: 1rem;
+    }
+  }
+}
 }
