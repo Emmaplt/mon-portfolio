@@ -17,3 +17,22 @@ code {
   margin: 0 auto; /* Centre le contenu horizontalement */
 }
 
+/* Styles globaux pour la scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f9fb;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3c949e;
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
