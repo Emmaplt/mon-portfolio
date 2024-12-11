@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import ButtonCV from "./components/ButtonCv/ButtonCv";
 import Services from "./components/Services/Services";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
@@ -22,6 +23,7 @@ function App() {
               <>
                 <Header />
                 <Hero />
+                <ButtonCV />
                 <ProjectsCard />
                 <Services />
                 <Skills />

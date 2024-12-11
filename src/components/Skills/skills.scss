@@ -2,9 +2,10 @@
 
 .skills {
   display: flex;
- align-items: center;
+  align-items: center;
   flex-direction: column;
   align-content: center;
+  gap: 1rem;
   height: auto;
   background-color: $background-container-color;
   padding-bottom: 100px;
@@ -21,7 +22,7 @@
     .skills-categories {
       display: flex;
       justify-content: center;
-      gap: 5rem;
+      gap: 15rem;
       width: 70%;
       height: 70%;
       align-items: center;

@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Booki",
     "titleproject": "Booki - Page d'accueil d'une agence de voyage",
-    "description": "Trouve votre hébergement pour des vacances de rêve.",
+    "description": "Ce projet consistait à intégrer la page d'accueil d'une agence de voyage en suivant une maquette fournie sur Figma. Le but principal était de reproduire fidèlement le design en HTML et CSS, tout en s'assurant que l'interface soit responsive pour s'adapter à différents formats (mobile, tablette, desktop).",
     "technologie": "HTML / CSS",
     "fonctionnalite": [
       "Reproduction fidèle des maquettes Figma pour plusieurs formats d'écran.",
@@ -12,9 +12,11 @@
     ],
     "lien": "https://github.com/Emmaplt/Booki_Projet2_Plaut_Emma.git",
     "retour": "Ce projet m’a permis de maîtriser l'intégration de maquettes responsives et de me familiariser avec les outils essentiels pour un développeur frontend. Cela a renforcé ma capacité à écrire un code propre et à respecter les exigences de design.",
-    "picture": "/assets/images/booki.png",
+    "picture": "/assets/images/booki-picture.png",
     "cover": "/assets/images/booki-card.png",
-    "illustration": "/assets/images/booki.png"
+    "illustration": "/assets/images/booki.png",
+    "backgroundGlobal": "#f2fcff",
+    "backgroundContent": "#c0d9ff"
   },
   {
     "id": 2,
@@ -29,9 +31,11 @@
     ],
     "lien": "https://github.com/Emmaplt/Portfolio-architecte-sophie-bluel-master.git",
     "retour": "Ce projet m'a permis de consolider mes compétences en JavaScript, notamment en manipulant le DOM pour rendre la page dynamique et interactive. La communication avec une API REST et le développement de fonctionnalités comme l'authentification et la gestion des médias m'ont offert une expérience pratique essentielle pour devenir une développeuse front-end complète.",
-    "picture": "/assets/images/booki.png",
+    "picture": "/assets/images/sophie-picture.png",
     "cover": "/assets/images/sophie-card.png",
-    "illustration": "/asset/images/booki.png"
+    "illustration": "/asset/images/booki.png",
+    "backgroundGlobal": "#ffffff",
+    "backgroundContent": "#e1eae8"
   },
   {
     "id": 3,
@@ -47,9 +51,11 @@
     ],
     "lien": "https://github.com/Emmaplt/Nina-Carducci-Dev-master.git",
     "retour": "Ce projet m’a permis de perfectionner mes compétences en optimisation web, notamment en utilisant des outils comme Lighthouse et Wave. J'ai appris à détecter et résoudre des problèmes affectant les performances, l'accessibilité et le SEO d'un site, des aspects essentiels pour améliorer la visibilité et l'expérience utilisateur.",
-    "picture": "/assets/images/booki.png",
+    "picture": "/assets/images/nina-picture.png",
     "cover": "/assets/images/nina-card.png",
-    "illustration": "/assets/images/booki.png"
+    "illustration": "/assets/images/booki.png",
+    "backgroundGlobal": "#fff9f3",
+    "backgroundContent": "#efd7c1"
   },
   {
     "id": 4,
@@ -64,9 +70,11 @@
     ],
     "lien": "https://github.com/Emmaplt/projet-kasa.git",
     "retour": "Ce projet m’a permis de consolider mes compétences en React, notamment la gestion des composants et des états, ainsi qu’en navigation avec React Router. J’ai également approfondi mes connaissances en SASS pour créer des interfaces soignées et interactives, tout en apprenant à structurer efficacement une application web moderne.",
-    "picture": "/assets/images/booki.png",
+    "picture": "/assets/images/kasa-picture.png",
     "cover": "/assets/images/kasa-card.png",
-    "illustration": "/assets/images/booki.png"
+    "illustration": "/assets/images/booki.png",
+    "backgroundGlobal": "#fff9f3",
+    "backgroundContent": "#efd7c1"
   },
   {
     "id": 5,
@@ -83,9 +91,11 @@
     ],
     "lien": "https://github.com/Emmaplt/Projet-backend.git",
     "retour": "Ce projet m’a permis de développer mes compétences en développement back-end, notamment en manipulant MongoDB avec Mongoose et en implémentant des API RESTful sécurisées. J’ai également approfondi mes connaissances en authentification et sécurité des données, tout en apprenant à structurer une application avec l’architecture MVC pour une meilleure maintenabilité.",
-    "picture": "/assets/images/booki.png",
+    "picture": "/assets/images/grimoire-picture.png",
     "cover": "/assets/images/grimoire-card.png",
-    "illustration": "/assets/images/booki.png"
+    "illustration": "/assets/images/booki.png",
+    "backgroundGlobal": "#fff9f3",
+    "backgroundContent": "#efd7c1"
   },
   {
     "id": 6,
@@ -101,8 +111,10 @@
       "Présentation de la solution technique avec des recommandations concrètes."
     ],
     "retour": "Ce projet m’a permis de renforcer mes compétences en gestion de projet et en rédaction technique, tout en développant ma capacité à traduire des besoins fonctionnels en tâches claires et organisées. J’ai également appris à utiliser des outils de veille technologique pour proposer des solutions innovantes et adaptées.",
-    "picture": "/assets/images/booki.png",
+    "picture": "/assets/images/qwenta-picture.png",
     "cover": "/assets/images/qwenta-card.png",
-    "illustration": "/assets/images/booki.png"
+    "illustration": "/assets/images/booki.png",
+    "backgroundGlobal": "#fff9f3",
+    "backgroundContent": "#efd7c1"
   }
 ]
