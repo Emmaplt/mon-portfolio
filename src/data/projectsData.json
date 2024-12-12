@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Booki",
-    "titleproject": "Booki - Page d'accueil d'une agence de voyage",
+    "titleproject": "Page d'accueil d'une agence de voyage",
     "description": "Ce projet consistait à intégrer la page d'accueil d'une agence de voyage en suivant une maquette fournie sur Figma. Le but principal était de reproduire fidèlement le design en HTML et CSS, tout en s'assurant que l'interface soit responsive pour s'adapter à différents formats (mobile, tablette, desktop).",
     "technologie": "HTML / CSS",
     "fonctionnalite": [
@@ -14,14 +14,14 @@
     "retour": "Ce projet m’a permis de maîtriser l'intégration de maquettes responsives et de me familiariser avec les outils essentiels pour un développeur frontend. Cela a renforcé ma capacité à écrire un code propre et à respecter les exigences de design.",
     "picture": "/assets/images/booki-picture.png",
     "cover": "/assets/images/booki-card.png",
-    "illustration": "/assets/images/booki.png",
+    "illustration1": "/assets/images/illustration-1-booki.png",
     "backgroundGlobal": "#f2fcff",
     "backgroundContent": "#c0d9ff"
   },
   {
     "id": 2,
     "title": "Sophie Bluel",
-    "titleproject": "Sophie Bluel - Portfolio architecte",
+    "titleproject": "Portfolio architecte",
     "description": "Dans ce projet, j'ai développé un site dynamique pour une architecte d'intérieur, Sophie Bluel. L'objectif principal était de manipuler le DOM avec JavaScript et de communiquer avec une API pour gérer l'affichage des travaux, les interactions utilisateur, et les fonctionnalités d'administration.",
     "technologie": "HTML / CSS, JavaScript, Swagger",
     "fonctionnalite": [
@@ -33,14 +33,15 @@
     "retour": "Ce projet m'a permis de consolider mes compétences en JavaScript, notamment en manipulant le DOM pour rendre la page dynamique et interactive. La communication avec une API REST et le développement de fonctionnalités comme l'authentification et la gestion des médias m'ont offert une expérience pratique essentielle pour devenir une développeuse front-end complète.",
     "picture": "/assets/images/sophie-picture.png",
     "cover": "/assets/images/sophie-card.png",
-    "illustration": "/asset/images/booki.png",
+    "illustration1": "/assets/images/illustration-1-sophie.png",
+    "illustration2": "/assets/images/illustration-2-sophie.png",
     "backgroundGlobal": "#ffffff",
     "backgroundContent": "#e1eae8"
   },
   {
     "id": 3,
     "title": "Nina Carducci",
-    "titleproject": "Nina Carducci - Site de photographe",
+    "titleproject": "Site de photographe",
     "description": "Ce projet consistait à analyser, déboguer et optimiser le site de Nina Carducci, photographe professionnelle, afin d'améliorer ses performances, son accessibilité, et son référencement SEO. À l’aide d’outils comme Lighthouse et Wave, j’ai réduit les temps de chargement, corrigé les erreurs d’accessibilité et optimisé la structure pour un meilleur référencement.",
     "technologie": "HTML / CSS, JavaScript, Lighthouse, Wave, Outils SEO",
     "fonctionnalite": [
@@ -53,14 +54,14 @@
     "retour": "Ce projet m’a permis de perfectionner mes compétences en optimisation web, notamment en utilisant des outils comme Lighthouse et Wave. J'ai appris à détecter et résoudre des problèmes affectant les performances, l'accessibilité et le SEO d'un site, des aspects essentiels pour améliorer la visibilité et l'expérience utilisateur.",
     "picture": "/assets/images/nina-picture.png",
     "cover": "/assets/images/nina-card.png",
-    "illustration": "/assets/images/booki.png",
+    "illustration1": "/assets/images/illustration-nina.png",
     "backgroundGlobal": "#fff9f3",
     "backgroundContent": "#efd7c1"
   },
   {
     "id": 4,
     "title": "Kasa",
-    "titleproject": "Kasa - Application web de location immobilière",
+    "titleproject": "Application web de location immobilière",
     "description": "Dans ce projet, j’ai développé le front-end de Kasa, une application web de location immobilière, en utilisant React et React Router. Le but était de créer une interface moderne et réactive, basée sur des maquettes fournies, tout en manipulant des données simulées depuis un fichier JSON.",
     "technologie": "React, React Router, SASS, Node.js",
     "fonctionnalite": [
@@ -72,14 +73,15 @@
     "retour": "Ce projet m’a permis de consolider mes compétences en React, notamment la gestion des composants et des états, ainsi qu’en navigation avec React Router. J’ai également approfondi mes connaissances en SASS pour créer des interfaces soignées et interactives, tout en apprenant à structurer efficacement une application web moderne.",
     "picture": "/assets/images/kasa-picture.png",
     "cover": "/assets/images/kasa-card.png",
-    "illustration": "/assets/images/booki.png",
+    "illustration1": "/assets/images/illustration-1-kasa.png",
+    "illustration2": "/assets/images/illustration-2-kasa.png",
     "backgroundGlobal": "#fff9f3",
     "backgroundContent": "#efd7c1"
   },
   {
     "id": 5,
     "title": "Mon Vieux Grimoire",
-    "titleproject": "Mon Vieux Grimoire - Développement Back-End d’un site de notation de livres",
+    "titleproject": "Développement Back-End d’un site de notation de livres",
     "description": "Dans ce projet, j’ai développé le back-end de Mon Vieux Grimoire, un site permettant aux utilisateurs de noter des livres. En utilisant Node.js, Express, et MongoDB, j’ai créé un serveur performant et sécurisé, avec des fonctionnalités essentielles comme la gestion des livres et des notations.",
     "technologie": "Node.js / Express, MongoDB / Mongoose, JWT, bcrypt, dotenv",
     "fonctionnalite": [
@@ -93,14 +95,14 @@
     "retour": "Ce projet m’a permis de développer mes compétences en développement back-end, notamment en manipulant MongoDB avec Mongoose et en implémentant des API RESTful sécurisées. J’ai également approfondi mes connaissances en authentification et sécurité des données, tout en apprenant à structurer une application avec l’architecture MVC pour une meilleure maintenabilité.",
     "picture": "/assets/images/grimoire-picture.png",
     "cover": "/assets/images/grimoire-card.png",
-    "illustration": "/assets/images/booki.png",
+    "illustration1": "/assets/images/illustration-grimoire.png",
     "backgroundGlobal": "#fff9f3",
     "backgroundContent": "#efd7c1"
   },
   {
     "id": 6,
     "title": "Qwenta",
-    "titleproject": "MenuMaker by Qwenta - Planification du développement",
+    "titleproject": "Planification du développement",
     "description": "Ce projet portait sur la planification complète du développement d’un site web de création de menus pour restaurateurs, sans intervention directe dans le codage. J’ai travaillé sur l’analyse des besoins, la rédaction des spécifications techniques, et la gestion de projet à l’aide d’un tableau Kanban. Une veille technologique a également été réalisée pour identifier les solutions adaptées aux objectifs du projet.",
     "technologie": "Notion, Feedly et User Stories",
     "fonctionnalite": [
@@ -113,7 +115,7 @@
     "retour": "Ce projet m’a permis de renforcer mes compétences en gestion de projet et en rédaction technique, tout en développant ma capacité à traduire des besoins fonctionnels en tâches claires et organisées. J’ai également appris à utiliser des outils de veille technologique pour proposer des solutions innovantes et adaptées.",
     "picture": "/assets/images/qwenta-picture.png",
     "cover": "/assets/images/qwenta-card.png",
-    "illustration": "/assets/images/booki.png",
+    "illustration1": "/assets/images/illustration-qwenta.png",
     "backgroundGlobal": "#fff9f3",
     "backgroundContent": "#efd7c1"
   }

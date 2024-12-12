@@ -32,36 +32,39 @@ const ProjectDetail = () => {
       <div className="project-header"
       style={{ backgroundColor: project.backgroundContent }}
       >
-        <a
-          href={project.lien}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="github-icon"
-          title="Voir le projet sur GitHub"
-        >
-          <FontAwesomeIcon icon={faGithub} />
-        </a>
-        <div className="header-navigation">
+        <div className="header-content">
+          <a
+            href={project.lien}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github-icon"
+            title="Voir le projet sur GitHub"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <div className="header-navigation">
+            <FontAwesomeIcon
+              icon={faChevronLeft}
+              className="nav-icon"
+              onClick={() => navigate(`/projects/${previousProjectId}`)}
+              title="Projet précédent"
+            />
+            <h1>{project.title}</h1>
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              className="nav-icon"
+              onClick={() => navigate(`/projects/${nextProjectId}`)}
+              title="Projet suivant"
+            />
+          </div>
           <FontAwesomeIcon
-            icon={faChevronLeft}
-            className="nav-icon"
-            onClick={() => navigate(`/projects/${previousProjectId}`)}
-            title="Projet précédent"
-          />
-          <h1>{project.titleproject}</h1>
-          <FontAwesomeIcon
-            icon={faChevronRight}
-            className="nav-icon"
-            onClick={() => navigate(`/projects/${nextProjectId}`)}
-            title="Projet suivant"
+            icon={faHome}
+            className="home-icon"
+            onClick={() => navigate("/")}
+            title="Accueil"
           />
         </div>
-        <FontAwesomeIcon
-          icon={faHome}
-          className="home-icon"
-          onClick={() => navigate("/")}
-          title="Accueil"
-        />
+        <h2>{project.titleproject}</h2>
       </div>
 
       <div className="project-content">
@@ -81,10 +84,17 @@ const ProjectDetail = () => {
                 <li key={index}>{func}</li>
               ))}
             </ul>
+            {project.illustration2 && (
+      <img
+        src={project.illustration2}
+        alt={`Illustration supplémentaire du projet ${project.title}`}
+      />
+    )}
           </div>
           <div className="details-column">
             <h3>Technologie utilisée :</h3>
             <p>{project.technologie}</p>
+            <img src={project.illustration1} alt={`Illustration du projet ${project.title}`} />
           </div>
         </div>
       </div>
