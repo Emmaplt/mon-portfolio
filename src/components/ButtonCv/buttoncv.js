@@ -8,9 +8,8 @@ const ButtonCV = () => {
       <div className="bottom-section"></div>
       <div className="button-wrapper">
         <a
-          href="/path-to-cv.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/cv-emma-plaut.pdf"
+          download="CV_Emma_Plaut.pdf"
           className="cv-button"
         >
           Mon CV
