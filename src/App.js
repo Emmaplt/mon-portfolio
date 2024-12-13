@@ -13,7 +13,7 @@ import ProjectDetail from "./components/ProjectDetail/Projectdetail";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/mon-portfolio">
       <div className="App">
         <Routes>
           {/* Page d'accueil */}
