@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className="header">
       <img src={logo} className="App-logo-header" alt="logo" />
-      <button className="menu-icon" onClick={toggleMenu}><FontAwesomeIcon icon={faBars} /></button>
+      <button className="menu-icon" onClick={toggleMenu} aria-label="Ouvrir le menu de navigation"><FontAwesomeIcon icon={faBars} /></button>
       <nav>
         <ul className={`nav-list ${menuOpen ? 'active' : ''}`}>
           <li><Link to="hero" smooth={true} onClick={() => setMenuOpen(false)} href="#hero">PRESENTATION</Link></li>
