@@ -8,7 +8,7 @@ const ButtonCV = () => {
       <div className="bottom-section"></div>
       <div className="button-wrapper">
         <a
-          href="/cv-emma-plaut.pdf"
+          href={`${process.env.PUBLIC_URL}/cv-emma-plaut.pdf`}
           download="CV_Emma_Plaut.pdf"
           className="cv-button"
         >
