@@ -1,4 +1,4 @@
-@import '../../assets/styles/_variables.scss';
+@import "../../assets/styles/_variables.scss";
 
 .skills-grid {
   display: none;
@@ -27,9 +27,7 @@
     margin: 0 auto;
     animation: spin 10s linear infinite;
     background-color: transparent;
-    box-shadow:
-      -5px 0 0 0 #9bd8db,
-      5px 0 0 0 #9bd8db;
+    box-shadow: -5px 0 0 0 #9bd8db, 5px 0 0 0 #9bd8db;
 
     .skill-icon {
       position: absolute;
@@ -138,7 +136,7 @@
           left: calc(50% + 100px * sin($angle));
           transform: translate(-50%, -50%);
         }
+      }
+    }
   }
-}
-}
 }

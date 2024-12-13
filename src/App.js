@@ -28,16 +28,20 @@ function App() {
                 <Services />
                 <Skills />
                 <Contact />
-                <Footer />
               </>
             }
           />
           {/* Détails d'un projet */}
           <Route
-            path="/projects/:id"
-            element={<ProjectDetail />}
+            path="/projects/:idName"
+            element={
+              <>
+                <ProjectDetail />
+              </>
+            }
           />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

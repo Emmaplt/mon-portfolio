@@ -1,17 +1,16 @@
 import React, { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import projects from "../../data/projectsData";
+import logo from "../../assets/images/logo-ymeria.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight, faHome } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import "./projectdetail.scss";
 
 const ProjectDetail = () => {
-  const { id } = useParams(); // Récupère l'ID depuis l'URL
+  const { idName } = useParams();
   const navigate = useNavigate();
 
-  const projectId = parseInt(id);
-  const project = projects.find((p) => p.id === projectId);
+  const project = projects.find((p) => p.idName === idName);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,59 +20,56 @@ const ProjectDetail = () => {
     return <p>Projet non trouvé.</p>;
   }
 
-  // Calculer les IDs des projets précédent et suivant
-  const previousProjectId = projectId > 1 ? projectId - 1 : projects.length;
-  const nextProjectId = projectId < projects.length ? projectId + 1 : 1;
+  const currentIndex = projects.findIndex((p) => p === project);
+  const previousProject = projects[(currentIndex - 1 + projects.length) % projects.length];
+  const nextProject = projects[(currentIndex + 1) % projects.length];
 
   return (
     <section className="project-detail"
       style={{ backgroundColor: project.backgroundGlobal }}
     >
-      <div className="project-header"
-        style={{ backgroundColor: project.backgroundContent }}
-      >
+      <div className="project-header">
+        <Link to="/">
+          <img src={logo} className="App-logo-header" alt="logo" />
+        </Link>
         <div className="header-content">
-          <a
-            href={project.lien}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="github-icon"
-            title="Voir le projet sur GitHub"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
           <div className="header-navigation">
             <FontAwesomeIcon
               icon={faChevronLeft}
               className="nav-icon"
-              onClick={() => navigate(`/projects/${previousProjectId}`)}
+              onClick={() => navigate(`/projects/${previousProject.idName}`)}
               title="Projet précédent"
             />
             <h1>{project.title}</h1>
+            <h2>{project.titleproject}</h2>
             <FontAwesomeIcon
               icon={faChevronRight}
               className="nav-icon"
-              onClick={() => navigate(`/projects/${nextProjectId}`)}
+              onClick={() => navigate(`/projects/${nextProject.idName}`)}
               title="Projet suivant"
             />
           </div>
-          <FontAwesomeIcon
-            icon={faHome}
-            className="home-icon"
-            onClick={() => navigate("/")}
-            title="Accueil"
-          />
         </div>
-        <h2>{project.titleproject}</h2>
       </div>
 
       <div className="project-content">
         <img src={project.picture} alt={`Vitrine du projet ${project.title}`} />
-        <div className="project-description"
+        <div
+          className="project-description"
           style={{ backgroundColor: project.backgroundContent }}
         >
           <h2>Description du projet</h2>
           <p>{project.description}</p>
+          <a
+            href={project.lien}
+            className="button-github"
+            target="_blank"
+            rel="noopener noreferrer"
+            title={`Voir ${project.title} sur Github`}
+            style={{ backgroundColor: project.backgroundGlobal }}
+          >
+            Voir {project.title} sur Github
+          </a>
         </div>
 
         <div className="project-details">
@@ -92,19 +88,24 @@ const ProjectDetail = () => {
             )}
           </div>
 
-
           <div className="details-column">
             <h3>Technologies utilisées :</h3>
             <p>{project.technologie}</p>
-            <img src={project.illustration1} alt={`Illustration du projet ${project.title}`} />
+            {project.illustration1 && (
+              <img
+                src={project.illustration1}
+                alt={`Illustration principale du projet ${project.title}`}
+              />
+            )}
           </div>
         </div>
       </div>
 
-      <div className="project-footer"
+      <div
+        className="project-footer"
         style={{ backgroundColor: project.backgroundContent }}
       >
-        <h3>Qu'en tirer ?</h3>
+        <h3>Mon retour d’expérience</h3>
         <p>{project.retour}</p>
       </div>
     </section>
