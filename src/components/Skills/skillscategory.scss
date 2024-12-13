@@ -95,3 +95,50 @@
     transform: rotate(-360deg);
   }
 }
+
+@media (max-width: 768px) {
+  .skill-category .skill-circle {
+    width: 200px;
+    height: 200px;
+
+    .skill-icon img {
+      width: 47px;
+    }
+
+    &.total-2 {
+      $total-icons: 2;
+      @for $i from 1 through $total-icons {
+        .skill-icon:nth-child(#{$i}) {
+          $angle: ($i - 1) * (360deg / $total-icons);
+          top: calc(50% + 100px * cos($angle));
+          left: calc(50% + 100px * sin($angle));
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    &.total-4 {
+      $total-icons: 4;
+      @for $i from 1 through $total-icons {
+        .skill-icon:nth-child(#{$i}) {
+          $angle: ($i - 1) * (360deg / $total-icons);
+          top: calc(50% + 100px * cos($angle));
+          left: calc(50% + 100px * sin($angle));
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    &.total-5 {
+      $total-icons: 5;
+      @for $i from 1 through $total-icons {
+        .skill-icon:nth-child(#{$i}) {
+          $angle: ($i - 1) * (360deg / $total-icons);
+          top: calc(50% + 100px * cos($angle));
+          left: calc(50% + 100px * sin($angle));
+          transform: translate(-50%, -50%);
+        }
+  }
+}
+}
+}
