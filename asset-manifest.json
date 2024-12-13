@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/mon-portfolio/static/css/main.124b38c7.css",
+    "main.js": "/mon-portfolio/static/js/main.734c5f85.js",
+    "static/media/avatar.png": "/mon-portfolio/static/media/avatar.86b84ac55b8745a80fcb.png",
+    "static/media/logo-ymeria.png": "/mon-portfolio/static/media/logo-ymeria.015b8b4948be85acaf6e.png",
+    "static/media/card-utilisateur-design.png": "/mon-portfolio/static/media/card-utilisateur-design.a3f9416e11ad44b5702d.png",
+    "static/media/card-applications.png": "/mon-portfolio/static/media/card-applications.029b7c4b4bcad4f3e2ba.png",
+    "static/media/mailbox.png": "/mon-portfolio/static/media/mailbox.28e8ecd845e46d0b03ff.png",
+    "static/media/card-accessibilite.png": "/mon-portfolio/static/media/card-accessibilite.720aea02c43651d71d4d.png",
+    "index.html": "/mon-portfolio/index.html",
+    "main.124b38c7.css.map": "/mon-portfolio/static/css/main.124b38c7.css.map",
+    "main.734c5f85.js.map": "/mon-portfolio/static/js/main.734c5f85.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.124b38c7.css",
+    "static/js/main.734c5f85.js"
+  ]
+}
