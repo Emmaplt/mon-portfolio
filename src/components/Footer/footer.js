@@ -17,6 +17,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="icon-linkedin"
           >
+            <span className='sr-only'>Voir le profil LinkedIn de Emma Plaut</span>
             <div className="icon-circle icon-linkedin-circle">
               <FontAwesomeIcon icon={faLinkedin} />
             </div>
@@ -27,6 +28,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="icon-github"
           >
+            <span className='sr-only'>Voir le profil LinkedIn de Emma Plaut</span>
             <div className="icon-circle icon-github-circle">
               <FontAwesomeIcon icon={faGithub} />
             </div>

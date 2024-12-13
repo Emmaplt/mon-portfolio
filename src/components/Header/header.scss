@@ -24,11 +24,9 @@
     color: $titre-color;
     background: none;
     border: none;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: absolute;
     right: 30px;
     top: 50%;
@@ -46,9 +44,10 @@
     font-family: $font-primary;
     font-size: 22px;
     font-weight: 700;
-    color: $titre-color;
 
-    li {
+    li a {
+      color: $titre-color;
+      text-decoration: none;
       cursor: pointer;
       transition: border-bottom 0.3s ease, color 0.3s ease;
       border-bottom: 3px solid transparent;

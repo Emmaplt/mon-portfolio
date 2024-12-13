@@ -18,11 +18,11 @@ const Header = () => {
       <button className="menu-icon" onClick={toggleMenu}><FontAwesomeIcon icon={faBars} /></button>
       <nav>
         <ul className={`nav-list ${menuOpen ? 'active' : ''}`}>
-          <li><Link to="hero" smooth={true} onClick={() => setMenuOpen(false)}>PRESENTATION</Link></li>
-          <li><Link to="projects" smooth={true} onClick={() => setMenuOpen(false)}>PROJET</Link></li>
-          <li><Link to="skills" smooth={true} onClick={() => setMenuOpen(false)}>COMPETENCES</Link></li>
-          <li><Link to="services" smooth={true} onClick={() => setMenuOpen(false)}>SERVICES</Link></li>
-          <li><Link to="contact" smooth={true} onClick={() => setMenuOpen(false)}>CONTACT</Link></li>
+          <li><Link to="hero" smooth={true} onClick={() => setMenuOpen(false)} href="#hero">PRESENTATION</Link></li>
+          <li><Link to="projects" smooth={true} onClick={() => setMenuOpen(false)} href="#projects">PROJET</Link></li>
+          <li><Link to="skills" smooth={true} onClick={() => setMenuOpen(false)} href="#skills">COMPETENCES</Link></li>
+          <li><Link to="services" smooth={true} onClick={() => setMenuOpen(false)} href="#services">SERVICES</Link></li>
+          <li><Link to="contact" smooth={true} onClick={() => setMenuOpen(false)} href="#contact">CONTACT</Link></li>
         </ul>
       </nav>
     </header>

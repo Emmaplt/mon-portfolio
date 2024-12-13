@@ -44,18 +44,23 @@ const ContactForm = () => {
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
       <div className="form-line">
+      <label for="name" class="sr-only">Votre nom</label>
         <input type="text" placeholder="Votre nom" name="name" required />
       </div>
       <div className="form-line">
+        <label for="surname" class="sr-only">Votre prénom</label>
         <input type="text" placeholder="Votre prénom" name="surname" required />
       </div>
       <div className="form-line">
+        <label for="email" class="sr-only">Votre adresse mail</label>
         <input type="email" placeholder="Votre adresse mail" name="email" required />
       </div>
       <div className="form-line">
+        <label for="subject" class="sr-only">Le sujet de votre demande</label>
         <input type="text" placeholder="Le sujet de votre demande" name="subject" required />
       </div>
       <div className="form-line">
+        <label for="message" class="sr-only">Description de votre demande</label>
         <textarea placeholder="Description de votre demande" name="message" rows="5" required />
       </div>
       <div className="form-line">

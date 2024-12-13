@@ -50,6 +50,18 @@
     max-width: 500px;
 
     .form-line {
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
       input,
       textarea {
         padding: 0.9rem;
@@ -60,7 +72,7 @@
         &::placeholder {
           font-size: 1rem;
           font-family: $font-primary;
-          color: #3c949e;
+          color: $titre-color;
           opacity: 1;
         }
       }
@@ -87,7 +99,7 @@
       width: 10vw;
       padding: 0.6rem 1rem;
       font-size: 1.2rem;
-      color: $texte-color;
+      color: $titre-color;
       background-color: $form-color;
       border: none;
       border-radius: 3rem;
@@ -96,6 +108,7 @@
 
       &:hover {
         background-color: $titre-color;
+        color: $background-color;
       }
     }
   }
