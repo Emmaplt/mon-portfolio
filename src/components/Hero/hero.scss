@@ -68,6 +68,10 @@
     font-size: 1.2rem;
   }
 
+  :root {
+    font-size: 16px; // Assurez une base cohérente
+  }
+
   @media (max-width: 768px) {
     .hero {
       flex-direction: column;
