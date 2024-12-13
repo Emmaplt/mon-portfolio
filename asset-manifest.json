@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mon-portfolio/static/css/main.98c3a5fc.css",
-    "main.js": "/mon-portfolio/static/js/main.30bd47ce.js",
+    "main.css": "/mon-portfolio/static/css/main.6ece72bf.css",
+    "main.js": "/mon-portfolio/static/js/main.4ca6859b.js",
     "static/media/avatar.png": "/mon-portfolio/static/media/avatar.86b84ac55b8745a80fcb.png",
     "static/media/logo-ymeria.png": "/mon-portfolio/static/media/logo-ymeria.015b8b4948be85acaf6e.png",
     "static/media/card-utilisateur-design.png": "/mon-portfolio/static/media/card-utilisateur-design.a3f9416e11ad44b5702d.png",
@@ -9,11 +9,11 @@
     "static/media/mailbox.png": "/mon-portfolio/static/media/mailbox.28e8ecd845e46d0b03ff.png",
     "static/media/card-accessibilite.png": "/mon-portfolio/static/media/card-accessibilite.720aea02c43651d71d4d.png",
     "index.html": "/mon-portfolio/index.html",
-    "main.98c3a5fc.css.map": "/mon-portfolio/static/css/main.98c3a5fc.css.map",
-    "main.30bd47ce.js.map": "/mon-portfolio/static/js/main.30bd47ce.js.map"
+    "main.6ece72bf.css.map": "/mon-portfolio/static/css/main.6ece72bf.css.map",
+    "main.4ca6859b.js.map": "/mon-portfolio/static/js/main.4ca6859b.js.map"
   },
   "entrypoints": [
-    "static/css/main.98c3a5fc.css",
-    "static/js/main.30bd47ce.js"
+    "static/css/main.6ece72bf.css",
+    "static/js/main.4ca6859b.js"
   ]
 }
