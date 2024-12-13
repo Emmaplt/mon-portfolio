@@ -13,11 +13,10 @@ code {
 }
 
 .global-container {
-  padding: 0; /* Ajoute une marge intérieure à gauche et à droite */
-  margin: 0 auto; /* Centre le contenu horizontalement */
+  padding: 0;
+  margin: 0 auto;
 }
 
-/* Styles globaux pour la scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
   height: 10px;
