@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import projects from "../../data/projectsData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight, faHome } from "@fortawesome/free-solid-svg-icons";
-import { faGithub} from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import "./projectdetail.scss";
 
 const ProjectDetail = () => {
@@ -27,10 +27,10 @@ const ProjectDetail = () => {
 
   return (
     <section className="project-detail"
-    style={{ backgroundColor: project.backgroundGlobal }}
+      style={{ backgroundColor: project.backgroundGlobal }}
     >
       <div className="project-header"
-      style={{ backgroundColor: project.backgroundContent }}
+        style={{ backgroundColor: project.backgroundContent }}
       >
         <div className="header-content">
           <a
@@ -85,14 +85,16 @@ const ProjectDetail = () => {
               ))}
             </ul>
             {project.illustration2 && (
-      <img
-        src={project.illustration2}
-        alt={`Illustration supplémentaire du projet ${project.title}`}
-      />
-    )}
+              <img
+                src={project.illustration2}
+                alt={`Illustration supplémentaire du projet ${project.title}`}
+              />
+            )}
           </div>
+
+
           <div className="details-column">
-            <h3>Technologie utilisée :</h3>
+            <h3>Technologies utilisées :</h3>
             <p>{project.technologie}</p>
             <img src={project.illustration1} alt={`Illustration du projet ${project.title}`} />
           </div>
@@ -100,7 +102,7 @@ const ProjectDetail = () => {
       </div>
 
       <div className="project-footer"
-            style={{ backgroundColor: project.backgroundContent }}
+        style={{ backgroundColor: project.backgroundContent }}
       >
         <h3>Qu'en tirer ?</h3>
         <p>{project.retour}</p>
